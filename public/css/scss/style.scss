@@ -51,9 +51,21 @@ header>.container>nav>ul>li>a{
 .img-fluid{
     width: 100%;
 }
+.img-rounded{
+    border-radius: 8px;
+    // 圖片圓角
+}
+.img.circle{
+    border-radius: 100%;
+    // 圖片圓形
+}
 .row{
     display: flex;
     flex-wrap: wrap;
+}
+.text-center{
+    text-align: center;
+    // 文字置中
 }
 .col-3{
     width:calc(100% / 4 -30px);

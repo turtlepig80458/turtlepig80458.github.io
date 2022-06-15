@@ -45,9 +45,21 @@ header > .container > nav > ul > li > a {
   width: 100%;
 }
 
+.img-rounded {
+  border-radius: 8px;
+}
+
+.img.circle {
+  border-radius: 100%;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .col-3 {
