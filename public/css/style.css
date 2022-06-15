@@ -77,3 +77,21 @@ header > .container > nav > ul > li > a {
 .date {
   color: #90A9B7;
 }
+
+footer {
+  background-color: #90A9B7;
+  padding: 40px 0 40px 0;
+}
+
+dt {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+dd {
+  margin-bottom: 4px;
+}
+
+dd > a {
+  color: #0d1a22;
+}
