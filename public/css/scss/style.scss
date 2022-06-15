@@ -73,3 +73,12 @@ header>.container>nav>ul>li>a{
     // 上右下左
     box-sizing: border-box;
 }
+
+.title a{
+    color: #3b8ebf;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.date{
+    color:$primary-color
+}

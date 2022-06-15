@@ -67,3 +67,13 @@ header > .container > nav > ul > li > a {
   margin: 20px 15px 20px 15px;
   box-sizing: border-box;
 }
+
+.title a {
+  color: #3b8ebf;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.date {
+  color: #90A9B7;
+}
