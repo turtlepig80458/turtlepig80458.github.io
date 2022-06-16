@@ -121,14 +121,10 @@ dd > a {
 
 .left {
   width: 25%;
-  margin: auto;
-  max-width: 1140px;
 }
 
 .right {
   width: 75%;
-  margin: auto;
-  max-width: 1140px;
 }
 
 .col-4 {
