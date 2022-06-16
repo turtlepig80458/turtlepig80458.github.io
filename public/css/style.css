@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +12,8 @@ a {
   text-decoration: none;
 }
 
-header {
-  background-color: blanchedalmond;
+body {
+  margin: 0;
 }
 
 .container {
@@ -21,7 +22,15 @@ header {
   max-width: 1140px;
 }
 
-h1 {
+header {
+  background-color: blanchedalmond;
+}
+
+header > .container > h1 {
+  padding-top: 20px;
+}
+
+header > .container > h1 > a {
   color: #90A9B7;
 }
 
@@ -62,16 +71,30 @@ header > .container > nav > ul > li > a {
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
 .col-3 {
   width: calc(100% / 4 -30px);
   margin: 20px 15px 20px 15px;
   box-sizing: border-box;
 }
 
+.col-6 {
+  width: calc(100% / 2 - 30px);
+  margin: 0px 15px 40px 15px;
+  /*上右下左*/
+}
+
 .title a {
   color: #3b8ebf;
   font-size: 1.5em;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .date {
@@ -94,4 +117,23 @@ dd {
 
 dd > a {
   color: #0d1a22;
+}
+
+.left {
+  width: 25%;
+  margin: auto;
+  max-width: 1140px;
+  background-color: #0d1a22;
+}
+
+.right {
+  width: 75%;
+  margin: auto;
+  max-width: 1140px;
+}
+
+.col-4 {
+  width: calc(75% / 3 - 30px);
+  margin: 0px 15px 40px 15px;
+  /*上右下左*/
 }
