@@ -80,13 +80,31 @@ header > .container > nav > ul > li > a {
 }
 
 .col-3 {
-  width: calc(100% / 4 -30px);
-  margin: 20px 15px 20px 15px;
-  box-sizing: border-box;
+  width: calc(100% / 4 - 30px);
+  margin: 0px 15px 40px 15px;
+  /*上右下左*/
+}
+
+.col-4 {
+  width: calc(100% / 3 - 30px);
+  margin: 0px 15px 40px 15px;
+  /*上右下左*/
 }
 
 .col-6 {
   width: calc(100% / 2 - 30px);
+  margin: 0px 15px 40px 15px;
+  /*上右下左*/
+}
+
+.col-9 {
+  width: calc(100% / 1.33333 - 30px);
+  margin: 0px 15px 40px 15px;
+  /*上右下左*/
+}
+
+.col-12 {
+  width: calc(100% / 1 - 30px);
   margin: 0px 15px 40px 15px;
   /*上右下左*/
 }
@@ -101,8 +119,13 @@ header > .container > nav > ul > li > a {
   color: #90A9B7;
 }
 
+h2 {
+  font-size: 2em;
+  margin: 40px 0 40px 0;
+}
+
 footer {
-  background-color: #90A9B7;
+  background-color: blanchedalmond;
   padding: 40px 0 40px 0;
 }
 
@@ -119,16 +142,31 @@ dd > a {
   color: #0d1a22;
 }
 
-.left {
-  width: 25%;
+.breadcrumb {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.right {
-  width: 75%;
+.breadcrumb > a {
+  color: black;
 }
 
-.col-4 {
-  width: calc(75% / 3 - 30px);
-  margin: 0px 15px 40px 15px;
-  /*上右下左*/
+.breadcrumb > a:hover {
+  color: #90A9B7;
+}
+
+.btn-primary {
+  background-color: #90A9B7;
+  padding: 15px;
+  color: black;
+  display: block;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: black;
+  color: #90A9B7;
 }
