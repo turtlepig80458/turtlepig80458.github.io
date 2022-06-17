@@ -5,7 +5,8 @@ $primary-color:#90A9B7;
     padding: 0;
 }
 
-ul,ol {
+ul,
+ol {
     list-style-type: none;
 }
 
@@ -132,7 +133,8 @@ header>.container>nav>ul>li>a {
 .date {
     color: $primary-color
 }
-h2{
+
+h2 {
     font-size: 2em;
     margin: 40px 0 40px 0;
 }
@@ -185,7 +187,39 @@ dd>a {
     // 圓角
     text-align: center;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     background-color: black;
     color: $primary-color;
+}
+
+.img-wrap {
+    display: block;
+    // background-color: gray;
+    position: relative;
+    margin-bottom: 10px;
+    
+}
+.img-overlay{
+    overflow: hidden;
+    border-radius: 8px;
+}
+.img-wrap img {
+    vertical-align: top;
+    transition: all .5s;
+}
+.img-wrap img:hover{
+    transform: scale(1.5);
+}
+.icon-new {
+    position: absolute;
+    width: 50px;
+    line-height: 50px;
+    color: white;
+    border-radius: 100%;
+    background-color: red;
+    // 圖型位置設定(下方)
+    top: 5px;
+    left: 5px;
+    // bottom: -50%;
 }

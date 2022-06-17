@@ -4,7 +4,8 @@
   padding: 0;
 }
 
-ul, ol {
+ul,
+ol {
   list-style-type: none;
 }
 
@@ -169,4 +170,35 @@ dd > a {
 .btn-primary:hover {
   background-color: black;
   color: #90A9B7;
+}
+
+.img-wrap {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.img-overlay {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.img-wrap img {
+  vertical-align: top;
+  transition: all 0.5s;
+}
+
+.img-wrap img:hover {
+  transform: scale(1.5);
+}
+
+.icon-new {
+  position: absolute;
+  width: 50px;
+  line-height: 50px;
+  color: white;
+  border-radius: 100%;
+  background-color: red;
+  top: 5px;
+  left: 5px;
 }
