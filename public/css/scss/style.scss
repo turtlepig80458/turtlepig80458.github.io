@@ -5,8 +5,7 @@ $primary-color:#90A9B7;
     padding: 0;
 }
 
-ul,
-ol {
+ul,ol {
     list-style-type: none;
 }
 
@@ -222,4 +221,54 @@ dd>a {
     top: 5px;
     left: 5px;
     // bottom: -50%;
+}
+// =======================================
+// icon-menu
+// =======================================
+
+// 超過768px以上執行 start
+@media(min-width:768px){
+    
+.icon-menu{
+    display: none;
+}
+} 
+// min-width 768px
+
+// 小於767px以下執行 start
+@media(max-width:767px){
+    h1{
+        // width: 85%;
+        // background-color: skyblue;
+        float: left;
+    }
+    .icon-menu{
+        float: right;
+        width: 15%;
+        display: block;
+        background-color:$primary-color;
+        color: #0d1a22;
+        line-height: 60px;
+        text-align: center;
+    }
+    header>.container>nav{
+        width: 100%;
+        float:left;
+        display: none;
+    }
+    header>.container>nav.active{
+        display: block;
+    }
+    header>.container>nav>ul{
+        display: block;
+    }
+    header>.container>nav>ul>li{
+    width: 100%;
+    }
+    header>.container>nav>ul>li>a{
+        display: block;
+    }
+    .overflow-hidden {
+        overflow: hidden;
+      }
 }
