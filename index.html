@@ -10,85 +10,100 @@
 <!-- header>.container>h1{Ayn's Portfolio}+nav>ul>li*4>a[href="#"]{文字}-->
 <body> 
   <header>
-    <div class="container"><a class="icon-menu" href="#">menu</a>
-      <h1><a href="index.html"> dan's Portfolio</a></h1>
-      <nav>
-        <ul>
-          <li><a href="#">關於我</a></li>
-          <li><a href="design_list.html">平面作品</a></li>
-          <li><a href="#">網頁設計作品</a></li>
-          <li><a href="#">聯絡我</a></li>
-        </ul>
-      </nav>
+    <div class="container">
+      <div class="row flex-space-between"> 
+        <h1><a href="index.html"> dan's Portfolio</a></h1><a class="icon-menu" href="#">menu</a>
+        <nav>
+          <ul>
+            <li><a href="#">關於我</a></li>
+            <li><a href="design_list.html">平面作品</a>
+              <ul class="submenu">
+                <li><a href="">品牌設計</a></li>
+                <li> <a href="">包裝設計</a></li>
+              </ul>
+            </li>
+            <li><a href="#">網頁設計作品</a>
+              <ul class="submenu">
+                <li><a href="">品牌設計</a></li>
+                <li> <a href="">包裝設計</a></li>
+              </ul>
+            </li>
+            <li><a href="#">聯絡我</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <!-- header end--><img class="img-fluid" src="https://picsum.photos/1280/360" alt="">
   <!-- content start-->
-  <div class="container">
-    <h2 class="text-center">最新作品一覽</h2>
-    <div class="row">
-      <div class="col-6 col-md-3 col-lg-3"><a href="#"><img class="img-fluid img-rounded" src="https://picsum.photos/240/240" alt=""></a>
-        <p class="title text-center"><a href="#">作品標題1</a></p>
-        <p class="date text-center">2022-6-15</p>
-      </div>
-      <div class="col-6 col-md-3 col-lg-3"><a href="#"><img class="img-fluid img-rounded" src="https://picsum.photos/240/240" alt=""></a>
-        <p class="title text-center"><a href="#">作品標題2</a></p>
-        <p class="date text-center">2022-6-15</p>
-      </div>
-      <div class="col-6 col-md-3 col-lg-3"><a href="#"><img class="img-fluid img-rounded" src="https://picsum.photos/240/240" alt=""></a>
-        <p class="title text-center"><a href="#">作品標題3</a></p>
-        <p class="date text-center">2022-6-15</p>
-      </div>
-      <div class="col-6 col-md-3 col-lg-3"><a href="#"><img class="img-fluid img-rounded" src="https://picsum.photos/240/240" alt=""></a>
-        <p class="title text-center"><a href="#">作品標題4</a></p>
-        <p class="date text-center">2022-6-15</p>
-      </div>
-      <div class="col-6 col-md-3 col-lg-3"><a href="#"><img class="img-fluid img-rounded" src="https://picsum.photos/240/240" alt=""></a>
-        <p class="title text-center"><a href="#">作品標題5</a></p>
-        <p class="date text-center">2022-6-15</p>
-      </div>
-      <div class="col-6 col-md-3 col-lg-3"><a href="#"><img class="img-fluid img-rounded" src="https://picsum.photos/240/240" alt=""></a>
-        <p class="title text-center"><a href="#">作品標題6</a></p>
-        <p class="date text-center">2022-6-15</p>
-      </div>
-      <div class="col-6 col-md-3 col-lg-3"><a href="#"><img class="img-fluid img-rounded" src="https://picsum.photos/240/240" alt=""></a>
-        <p class="title text-center"><a href="#">作品標題7</a></p>
-        <p class="date text-center">2022-6-15</p>
-      </div>
-      <div class="col-6 col-md-3 col-lg-3"><a href="#"><img class="img-fluid img-rounded" src="https://picsum.photos/240/240" alt=""></a>
-        <p class="title text-center"><a href="#">作品標題8</a></p>
-        <p class="date text-center">2022-6-15</p>
+  <!-- .container>h1{最新作品一覽}+.row-->
+  <content>
+    <div class="container">
+      <h2 class="fz-3 mb-3 text-center">最新作品一覽</h2>
+      <div class="row">
+        <div class="col-6 col-md-4 col-lg-3"><a href="#"><img class="img-fluid img-rounded" src="https://picsum.photos/240/240" alt=""></a>
+          <p class="title text-center"><a href="#">作品標題1</a></p>
+          <p class="date text-center">2022-6-15</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3"><a href="#"><img class="img-fluid img-rounded" src="https://picsum.photos/240/240" alt=""></a>
+          <p class="title text-center"><a href="#">作品標題2</a></p>
+          <p class="date text-center">2022-6-15</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3"><a href="#"><img class="img-fluid img-rounded" src="https://picsum.photos/240/240" alt=""></a>
+          <p class="title text-center"><a href="#">作品標題3</a></p>
+          <p class="date text-center">2022-6-15</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3"><a href="#"><img class="img-fluid img-rounded" src="https://picsum.photos/240/240" alt=""></a>
+          <p class="title text-center"><a href="#">作品標題4</a></p>
+          <p class="date text-center">2022-6-15</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3"><a href="#"><img class="img-fluid img-rounded" src="https://picsum.photos/240/240" alt=""></a>
+          <p class="title text-center"><a href="#">作品標題5</a></p>
+          <p class="date text-center">2022-6-15</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3"><a href="#"><img class="img-fluid img-rounded" src="https://picsum.photos/240/240" alt=""></a>
+          <p class="title text-center"><a href="#">作品標題6</a></p>
+          <p class="date text-center">2022-6-15</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3"><a href="#"><img class="img-fluid img-rounded" src="https://picsum.photos/240/240" alt=""></a>
+          <p class="title text-center"><a href="#">作品標題7</a></p>
+          <p class="date text-center">2022-6-15</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3"><a href="#"><img class="img-fluid img-rounded" src="https://picsum.photos/240/240" alt=""></a>
+          <p class="title text-center"><a href="#">作品標題8</a></p>
+          <p class="date text-center">2022-6-15</p>
+        </div>
       </div>
     </div>
-  </div>
+  </content>
   <!-- content end-->
   <!-- footer start-->
   <!-- footer>.container>.row>dl.col-md-3*5>dt{標題$$}+dd*4>a{項目$$}^^^p.copyright.text-center{copyright}-->
   <footer>
     <div class="container">
       <div class="row">
-        <dl class="col-md-3">
+        <dl class="col-6 col-md-4 col-lg-3">
           <dt>標題01</dt>
           <dd><a href="#">項目01</a></dd>
           <dd><a href="#">項目02</a></dd>
           <dd><a href="#">項目03</a></dd>
           <dd><a href="#">項目04</a></dd>
         </dl>
-        <dl class="col-md-3">
+        <dl class="col-6 col-md-4 col-lg-3">
           <dt>標題02</dt>
           <dd><a href="#">項目01</a></dd>
           <dd><a href="#">項目02</a></dd>
           <dd><a href="#">項目03</a></dd>
           <dd><a href="#">項目04</a></dd>
         </dl>
-        <dl class="col-md-3">
+        <dl class="col-6 col-md-4 col-lg-3">
           <dt>標題03</dt>
           <dd><a href="#">項目01</a></dd>
           <dd><a href="#">項目02</a></dd>
           <dd><a href="#">項目03</a></dd>
           <dd><a href="#">項目04</a></dd>
         </dl>
-        <dl class="col-md-3">
+        <dl class="col-6 col-md-4 col-lg-3">
           <dt>標題04</dt>
           <dd><a href="#">項目01</a></dd>
           <dd><a href="#">項目02</a></dd>

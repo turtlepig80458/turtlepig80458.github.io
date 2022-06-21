@@ -10,7 +10,7 @@ head
 body 
   header
     .container
-      .row.flex-space-between
+      .row.flex-space-between 
         h1
           a(href='index.html')  dan's Portfolio
         a.icon-menu(href="#") menu
@@ -20,65 +20,76 @@ body
               a(href='#') 關於我
             li
               a(href='design_list.html') 平面作品
+              ul.submenu
+                li
+                  a(href="") 品牌設計
+                li 
+                  a(href="") 包裝設計
             li
               a(href='#') 網頁設計作品
+              ul.submenu
+                li
+                  a(href="") 品牌設計
+                li 
+                  a(href="") 包裝設計
             li
-              a(href='#') 聯絡我
+                a(href='#') 聯絡我
   // header end
   img.img-fluid(src='https://picsum.photos/1280/360' alt='')
   // content start
   // .container>h1{最新作品一覽}+.row
-  .container
-     h2.fz-3.mb-3.text-center 最新作品一覽
-    .row
-      .col-6.col-md-4.col-lg-3
-        a(href='#')
-          img.img-fluid.img-rounded(src='https://picsum.photos/240/240' alt='')
-        p.title.text-center
-          a(href='#') 作品標題1
-        p.date.text-center 2022-6-15
-      .col-6.col-md-4.col-lg-3
-        a(href='#')
-          img.img-fluid.img-rounded(src='https://picsum.photos/240/240' alt='')
-        p.title.text-center
-          a(href='#') 作品標題2
-        p.date.text-center 2022-6-15
-      .col-6.col-md-4.col-lg-3
-        a(href='#')
-          img.img-fluid.img-rounded(src='https://picsum.photos/240/240' alt='')
-        p.title.text-center
-          a(href='#') 作品標題3
-        p.date.text-center 2022-6-15
-      .col-6.col-md-4.col-lg-3
-        a(href='#')
-          img.img-fluid.img-rounded(src='https://picsum.photos/240/240' alt='')
-        p.title.text-center
-          a(href='#') 作品標題4
-        p.date.text-center 2022-6-15
-      .col-6.col-md-4.col-lg-3
-        a(href='#')
-          img.img-fluid.img-rounded(src='https://picsum.photos/240/240' alt='')
-        p.title.text-center
-          a(href='#') 作品標題5
-        p.date.text-center 2022-6-15
-      .col-6.col-md-4.col-lg-3
-        a(href='#')
-          img.img-fluid.img-rounded(src='https://picsum.photos/240/240' alt='')
-        p.title.text-center
-          a(href='#') 作品標題6
-        p.date.text-center 2022-6-15
-      .col-6.col-md-4.col-lg-3
-        a(href='#')
-          img.img-fluid.img-rounded(src='https://picsum.photos/240/240' alt='')
-        p.title.text-center
-          a(href='#') 作品標題7
-        p.date.text-center 2022-6-15
-      .col-6.col-md-4.col-lg-3
-        a(href='#')
-          img.img-fluid.img-rounded(src='https://picsum.photos/240/240' alt='')
-        p.title.text-center
-          a(href='#') 作品標題8
-        p.date.text-center 2022-6-15
+  content
+    .container
+      h2.fz-3.mb-3.text-center 最新作品一覽
+      .row
+        .col-6.col-md-4.col-lg-3
+          a(href='#')
+            img.img-fluid.img-rounded(src='https://picsum.photos/240/240' alt='')
+          p.title.text-center
+            a(href='#') 作品標題1
+          p.date.text-center 2022-6-15
+        .col-6.col-md-4.col-lg-3
+          a(href='#')
+            img.img-fluid.img-rounded(src='https://picsum.photos/240/240' alt='')
+          p.title.text-center
+            a(href='#') 作品標題2
+          p.date.text-center 2022-6-15
+        .col-6.col-md-4.col-lg-3
+          a(href='#')
+            img.img-fluid.img-rounded(src='https://picsum.photos/240/240' alt='')
+          p.title.text-center
+            a(href='#') 作品標題3
+          p.date.text-center 2022-6-15
+        .col-6.col-md-4.col-lg-3
+          a(href='#')
+            img.img-fluid.img-rounded(src='https://picsum.photos/240/240' alt='')
+          p.title.text-center
+            a(href='#') 作品標題4
+          p.date.text-center 2022-6-15
+        .col-6.col-md-4.col-lg-3
+          a(href='#')
+            img.img-fluid.img-rounded(src='https://picsum.photos/240/240' alt='')
+          p.title.text-center
+            a(href='#') 作品標題5
+          p.date.text-center 2022-6-15
+        .col-6.col-md-4.col-lg-3
+          a(href='#')
+            img.img-fluid.img-rounded(src='https://picsum.photos/240/240' alt='')
+          p.title.text-center
+            a(href='#') 作品標題6
+          p.date.text-center 2022-6-15
+        .col-6.col-md-4.col-lg-3
+          a(href='#')
+            img.img-fluid.img-rounded(src='https://picsum.photos/240/240' alt='')
+          p.title.text-center
+            a(href='#') 作品標題7
+          p.date.text-center 2022-6-15
+        .col-6.col-md-4.col-lg-3
+          a(href='#')
+            img.img-fluid.img-rounded(src='https://picsum.photos/240/240' alt='')
+          p.title.text-center
+            a(href='#') 作品標題8
+          p.date.text-center 2022-6-15
   // content end
   // footer start
   // footer>.container>.row>dl.col-md-3*5>dt{標題$$}+dd*4>a{項目$$}^^^p.copyright.text-center{copyright}

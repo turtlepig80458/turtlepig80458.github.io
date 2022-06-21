@@ -55,7 +55,60 @@ header>.container nav>ul>li>a {
     font-size: 1.2em;
     letter-spacing: 2px;
 }
+@media (min-width:768px){
+    header>.container nav{
+        width: 100%;
+    }
+    header>.container nav>ul>li{
+        position: relative;
+    }
+    header>.container nav>ul>li:hover .submenu{
+        display: block;
+    }
+    header{
+        position: relative;
+    }
+    // LOGO置中 start
+    header h1{
+        position: absolute;
+        left: 50%;
+        // margin-left: -101px;
+        // 絕對定位寫法，LOGO總寬/2
+        transform: translateX(-50%);
+        // background-color: skyblue;
+        // PC版 LOGO置中做法
+    }
+    header nav{
+        display: flex;
+        justify-content: center;
+    }
+    header>.container nav>ul>li{
+        margin-left: 20px;
+        // margin-right: 20px;
+    }
+    header>.container nav>ul>li:nth-child(2){
+        margin-right: 250px;
+    }
+    // LOGO置中 end
 
+    .submenu{
+        position: absolute;
+        background-color: $primary-color;
+        width: 160%;
+        left: 0px;
+        // bottom:0px;
+        top:60px;
+        padding:10px;
+        display: none;
+    }
+    .submenu>li{
+        line-height: 40px;
+    }
+    .submenu>li>a{
+        color:black;
+    }
+
+}//min-width 768 end
 // ========================================================
 // 內容區
 // ========================================================
@@ -92,7 +145,7 @@ header>.container nav>ul>li>a {
 // 區塊相關樣式
 .row {
     display: flex;
-    flex-wrap: wrap;    // 換行
+    flex-wrap: wrap; // 換行
     // justify-content: space-between;
 }
 
@@ -103,36 +156,40 @@ header>.container nav>ul>li>a {
 }
 
 @for $i from 1 through 12 {
-    .col-#{$i}{
+    .col-#{$i} {
         --num: calc(12 / #{$i});
         width: calc(100% / var(--num) - 30px);
         margin: 0px 15px 40px 15px;
     }
 }
 
-@media (min-width:768px){
+@media (min-width:768px) {
     @for $i from 1 through 12 {
-        .col-md-#{$i}{
+        .col-md-#{$i} {
             --num: calc(12 / #{$i});
             width: calc(100% / var(--num) - 30px);
             margin: 0px 15px 40px 15px;
         }
     }
-} // 768px end
+}
 
-@media (min-width:1200px){
+// 768px end
+
+@media (min-width:1200px) {
     @for $i from 1 through 12 {
-        .col-lg-#{$i}{
+        .col-lg-#{$i} {
             --num: calc(12 / #{$i});
             width: calc(100% / var(--num) - 30px);
             margin: 0px 15px 40px 15px;
         }
     }
-} // 1200px end
+}
 
-@media (min-width:768px){
-    .order-md-1{
-        order:-1;
+// 1200px end
+
+@media (min-width:768px) {
+    .order-md-1 {
+        order: -1;
     }
 }
 
@@ -283,12 +340,12 @@ dd>a {
 // 小於767px以下執行 start
 @media(max-width:767px) {
     // h1 {
-        // width: 85%;
-        // background-color: skyblue;
+    // width: 85%;
+    // background-color: skyblue;
 
     // }
 
-    .flex-space-between{
+    .flex-space-between {
         justify-content: space-between;
     }
 
@@ -301,57 +358,83 @@ dd>a {
         text-align: center;
     }
 
-    // header{
-    //     position: relative;
-    // }
-    header>.container nav {
+    header {
+        position: relative;
+    }
+
+    header > .container nav{
         width: 100%;
+        position: absolute;
+        top:60px;
+        background-color: blanchedalmond;
         // display: none;
-        // position: absolute;
-        // top: 60px;
-        // left: 0px;
-        // background-color: blanchedalmond;
+        // 需要蓋板的話打開以下程式碼
+        // position: fixed;
+        // top:0px;
+        // height: 100vh;
+        // z-index: 999;
+
+        // 需要從上往下出現導覽時打開以下程式碼
+        // height:0px;
+        // overflow: hidden;
     }
-// nav{
-//     // viewport width
-//     left: -100vw;
-//     transition: left .3s;
-// }
-// .icon-menu:hover + nav{
-//     left: 0px;
-// }
-    header>.container nav.active {
+    nav{
+        // viewport width
+        left:0px;
+        // 這一行等二層選單做完之後在打開
+        left:-100vw;
+        transition: all .3s;
+    }
+    // 之後搭配javascript要改寫選取器的寫法
+    .icon-menu:hover + nav{
+        left:0px;
+
+        // 需要從上往下出現導覽時打開以下程式碼
+        // height: 244px;
+    }
+    header > .container nav.active{
         display: block;
     }
-
-    header>.container nav>ul {
+    header > .container nav > ul{
         display: block;
     }
-
-    header>.container nav>ul>li {
-        width: 100%;
+    header > .container nav > ul > li{
         text-align: center;
-        border-bottom: 1px solid $primary-color;
+        width: 100%;
+        border-bottom:1px solid $primary-color;
     }
-
-    header>.container nav>ul>li>a {
+    header > .container nav > ul > li > a{
         display: block;
     }
-
     
-}
+    .submenu{
+        display: none;
+        background-color: $primary-color;
+    }
+    header > .container nav > ul > li:hover .submenu{
+        display: block;
+    }
+    .submenu>li{
+        line-height: 60px;
+        border-bottom:1px solid black;
+    }
+    .submenu>li>a{
+        color:black;
+        display: block;
+    }
+} // max-width 767 end
 
 // $i index 第一個字不能是數字
 // for 迴圈
 // form 從1開始到12
 @for $i from 1 through 12 {
-    .fz-#{$i}{
+    .fz-#{$i} {
         font-size: $i*1em;
     }
 }
 
 @for $i from 1 through 12 {
-    .mb-#{$i}{
+    .mb-#{$i} {
         margin-bottom: $i * 1em;
     }
 }
